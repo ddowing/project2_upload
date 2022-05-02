@@ -1,0 +1,212 @@
+@media screen and (max-width: 768px) {
+    .header-top{
+        display: none;
+    }
+    .header-gnb{
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        background: #fff;
+    }
+    .header-gnb .w1200{
+        height: 70px;
+    }
+    .header-gnb .logo{
+        height: 70px;
+        position: relative;
+        left: 15px;
+    }
+    .header-gnb ul li:nth-child(3),.header-gnb ul li:nth-child(4),.header-gnb ul li:nth-child(5) {
+        display: none;
+    }
+    .header-gnb .gnb li.hambergur{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .header-gnb .toggle-menu{
+        position: relative;
+        background: none;
+        width: 34px;
+        height: 24px;
+        border: 0;
+        text-indent: -9999px;
+    }
+    .header-gnb .toggle-menu::before{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+        height: calc(50% - 1px);
+        transition: all 0.15s linear;
+    }
+    .header-gnb .toggle-menu::after{
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #000;
+        transition: all 0.15s linear;
+    }
+
+    body{
+        margin-top: 70px;
+        border-top: 1px solid transparent;
+    }
+
+    /* main-visual */
+    .main-visual ul li dl.w1200{
+        width: 86%;
+        margin: 0 auto;
+    }
+    .main-visual ul.swiper-wrapper li dl dt{
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+    .main-visual ul.swiper-wrapper li dl dt p{
+        font-size: 20px;
+    }
+    .main-visual ul.swiper-wrapper li dl dd{
+        padding-top: 20px;
+    }
+
+    /* main-story */
+    .main-story{
+        padding: 16vw 0;
+    }
+    .main-story h2{
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 86%;
+    }
+    .main-story .w1200.pr{
+        width: 86%;
+        margin: 0 auto;
+    }
+    .main-story .w1200.pr .swiper-content{
+        width: 100%;
+    }
+    .main-story .w1200.pr .content1{
+        width: 360px;
+        margin-right: 60px;
+    }
+    .main-story > .w1200.pr > .swiper-content .thumb {
+        height: 200px;
+    }
+    /* main-video */
+    .main-video{
+        padding: 16vw 0;
+    }
+    .main-video h2{
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 86%;
+    }
+    .main-video .active-video,.main-video .sub-video-wrap{
+        width: 86%;
+        margin: 0 auto;
+    }
+    .main-video .active-video{
+        height: 48vw;
+        margin-top: 20px;
+    }
+    .main-video .sub-video-wrap{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-video .sub-video-wrap .thumbs{
+        width: 80%;
+    }
+    .main-video .sub-video-wrap .thumbs li{
+        height: 8vw;
+    }
+
+    /* main-magazine */
+    .main-magazine{
+        padding: 16vw 0;
+    }
+    .main-magazine .menu,.main-magazine .content-wrap{
+        width: 86%;
+        margin: 0 auto;
+    }
+    .main-magazine .menu ul li{
+        margin-right: 3vw;
+    }
+    .main-magazine .menu{
+        margin-bottom: 30px;
+
+    }
+    .main-magazine .content-wrap{
+        justify-content: space-between;
+    }
+    .main-magazine .content-wrap .content{
+        width: 46%;
+        margin-bottom: 6vw;
+        margin-right: 0 !important;
+    }
+
+    .main-villiv .w1200{
+        width: 86%;
+        margin: 0 auto;
+    }
+
+    /* footer */
+    footer .w1200{
+        display: block;
+        padding: 10vw 0;
+    }
+    footer .w1200 .footer{
+        width: 86%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    footer .w1200 .footer .fnb{
+        justify-content: center;
+        font-size: 12px;
+    }
+    footer .w1200 .footer .fnb li{
+        padding: 0;
+        flex: auto;
+    }
+    footer .w1200 .footer .footer-info{
+        display: none;
+    }
+    footer .w1200 .newsletter{
+        width: 100%;
+        padding: 4%;
+        margin-top: 15vw;
+        background: #493f38;
+    }
+    footer .w1200 .newsletter h3{
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    footer .w1200 .newsletter .btns{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5vw;
+    }
+    footer .w1200 .newsletter .btns button{
+        width: 48%;
+        min-width: 48%;
+    }
+    footer .footer-info.mo-only{
+        display: block !important;
+        text-align: center;
+    }
+    footer .footer-info.mo-only{
+        margin-top: 10px;
+    }    
+
+
+
+}
